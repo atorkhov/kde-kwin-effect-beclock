@@ -1,11 +1,11 @@
 Name:           kde-kwin-effect-beclock
-Version:        0.16
+Version:        0.18
 Release:        1%{?dist}
 Summary:        A simple clock, implemented as KWin Effect
 
 License:        GPLv2+
 URL:            http://kde-look.org/content/show.php/BeClock?content=117542
-Source0:        117542-beclock-kwin-fx-0.16.txz
+Source0:        117542-beclock-kwin-fx-%{version}.txz
 
 BuildRequires:  cmake kdebase-workspace-devel libX11-devel mesa-libGL-devel mesa-libGLES-devel
 
@@ -39,6 +39,9 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 
 %changelog
+* Sun Mar 25 2012 Alexey Torkhov <atorkhov@gmail.com> - 0.18-1
+- New version.
+
 * Mon Jan 16 2012 Alexey Torkhov <atorkhov@gmail.com> - 0.16-1
 - Initial package.
 
